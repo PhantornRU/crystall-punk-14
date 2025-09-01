@@ -74,7 +74,7 @@
         Base: dead
   - type: CP14StagedButcherable
     stages:
-      - CP14Stage_Skin_Light
+      - CP14Stage_Skin_Medium_With_Extra_Scrap_Heavy
       - CP14Stage_Meat_Mole
   - type: Bloodstream
     bloodMaxVolume: 200

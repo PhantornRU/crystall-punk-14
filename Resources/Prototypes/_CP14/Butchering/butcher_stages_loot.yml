@@ -10,15 +10,14 @@
   delay: 2
   requireDead: true
 
-# Small fur (e.g., rabbit, frog)
 - type: CP14ButcherStage
   parent: ParentStage_Loot
-  id: CP14Stage_Loot_SmallFur
+  id: CP14Stage_Loot_Fur_Cheap
   spawned:
-    - id: CP14Fur
+    - id: CP14CheapFur
       amount: 1
-      prob: 0.75
 
+# Small fur (e.g., rabbit)
 - type: CP14ButcherStage
   parent: ParentStage_Loot
   id: CP14Stage_Loot_Fur
@@ -29,7 +28,7 @@
 # Medium fur (e.g., pig)
 - type: CP14ButcherStage
   parent: ParentStage_Loot
-  id: CP14Stage_Loot_MediumFur
+  id: CP14Stage_Loot_Fur_Medium
   spawned:
     - id: CP14CheapFur
       amount: 1
@@ -37,11 +36,21 @@
       amount: 1
       prob: 0.5
 
+# Good fur (e.g., bear)
+- type: CP14ButcherStage
+  parent: ParentStage_Loot
+  id: CP14Stage_Loot_Fur_Good
+  spawned:
+    - id: CP14GoodFur
+      amount: 1
+
 # Wool / string (sheep)
 - type: CP14ButcherStage
   parent: ParentStage_Loot
   id: CP14Stage_Loot_Wool
   spawned:
+    - id: CP14CheapFur
+      amount: 1
     - id: CP14String
       amount: 4
       maxAmount: 16

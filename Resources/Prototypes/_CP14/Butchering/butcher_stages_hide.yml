@@ -10,7 +10,7 @@
   delay: 3
   requireDead: true
 
-# Light leather (rabbit, frog)
+# Light leather (rabbit)
 - type: CP14ButcherStage
   parent: ParentStage_Skin
   id: CP14Stage_Skin_Light
